@@ -21,10 +21,14 @@ func main() {
 
 	if unidadeOrigem == "celsius" {
 		unidadeDestino = "fahrenheit"
+	} else if unidadeOrigem == "fahrenheit" {
+		unidadeDestino = "celsius"
 	} else if unidadeOrigem == "quilometros" {
 		unidadeDestino = "milhas"
+	} else if unidadeOrigem == "milhas" {
+		unidadeDestino = "quilometros"
 	} else {
-		fmt.Printf("%s não é uma unidade conhecida!", unidadeDestino)
+		fmt.Printf("%s não é uma unidade conhecida!", unidadeOrigem)
 		os.Exit(1)
 	}
 
@@ -39,9 +43,13 @@ func main() {
 		var valorDestino float64
 
 		if unidadeOrigem == "celsius" {
-			valorDestino = valorOrigem*1.8 + 32
+			valorDestino = (valorOrigem * 1.8) + 32
+		} else if unidadeOrigem == "fahrenheit" {
+			valorDestino = (valorOrigem - 32) / 1.8
+		} else if unidadeOrigem == "quilometros" {
+			valorDestino = valorOrigem * 0.621371192
 		} else {
-			valorDestino = valorOrigem / 1.60934
+			valorDestino = valorOrigem / 1.609344
 		}
 
 		fmt.Printf("%.2f %s = %.2f %s\n", valorOrigem, unidadeOrigem, valorDestino, unidadeDestino)
