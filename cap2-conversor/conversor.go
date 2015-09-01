@@ -10,7 +10,7 @@ func main() {
 	numArgs := len(os.Args)
 
 	if numArgs < 3 {
-		fmt.Println("Uso: conversor <valores> <unidade>")
+		fmt.Println("Uso: conversor <valores> <unidade> [celsius, fahrenheit, km ou mi]")
 		os.Exit(1)
 	}
 
@@ -23,10 +23,10 @@ func main() {
 		unidadeDestino = "fahrenheit"
 	} else if unidadeOrigem == "fahrenheit" {
 		unidadeDestino = "celsius"
-	} else if unidadeOrigem == "quilometros" {
-		unidadeDestino = "milhas"
-	} else if unidadeOrigem == "milhas" {
-		unidadeDestino = "quilometros"
+	} else if unidadeOrigem == "km" {
+		unidadeDestino = "mi"
+	} else if unidadeOrigem == "mi" {
+		unidadeDestino = "km"
 	} else {
 		fmt.Printf("%s não é uma unidade conhecida!", unidadeOrigem)
 		os.Exit(1)
@@ -46,10 +46,10 @@ func main() {
 			valorDestino = (valorOrigem * 1.8) + 32
 		} else if unidadeOrigem == "fahrenheit" {
 			valorDestino = (valorOrigem - 32) / 1.8
-		} else if unidadeOrigem == "quilometros" {
-			valorDestino = valorOrigem * 0.621371192
-		} else {
+		} else if unidadeOrigem == "km" {
 			valorDestino = valorOrigem / 1.609344
+		} else {
+			valorDestino = valorOrigem * 1.609344
 		}
 
 		fmt.Printf("%.2f %s = %.2f %s\n", valorOrigem, unidadeOrigem, valorDestino, unidadeDestino)
