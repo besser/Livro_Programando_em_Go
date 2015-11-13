@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+!_TAG_PROGRAM_AUTHOR	Joel Stemmer	/stemmertech@gmail.com/
+!_TAG_PROGRAM_NAME	gotags
+!_TAG_PROGRAM_URL	https://github.com/jstemmer/gotags
+!_TAG_PROGRAM_VERSION	1.3.0	/go1.5.1/
+Desempilhar	cap3-pilha/pilha.go	50;"	m	access:public	ctype:Pilha	language:Go	line:50	signature:()	type:interface{}, error
+Empilhar	cap3-pilha/pilha.go	46;"	m	access:public	ctype:Pilha	language:Go	line:46	signature:(valor interface{})
+Pilha	cap3-pilha/pilha.go	34;"	t	access:public	language:Go	line:34	type:struct
+Tamanho	cap3-pilha/pilha.go	38;"	m	access:public	ctype:Pilha	language:Go	line:38	signature:()	type:int
+Vazia	cap3-pilha/pilha.go	42;"	m	access:public	ctype:Pilha	language:Go	line:42	signature:()	type:bool
+colherEstatisticas	cap3-maps/maps.go	17;"	f	access:private	language:Go	line:17	signature:(palavras []string)	type:map[string]int
+errors	cap3-pilha/pilha.go	4;"	i	language:Go	line:4
+fmt	cap1-ola/ola.go	3;"	i	language:Go	line:3
+fmt	cap2-conversor/conversor.go	4;"	i	language:Go	line:4
+fmt	cap2-quicksort/quicksort.go	4;"	i	language:Go	line:4
+fmt	cap3-maps/maps.go	4;"	i	language:Go	line:4
+fmt	cap3-pilha/pilha.go	5;"	i	language:Go	line:5
+imprimir	cap3-maps/maps.go	35;"	f	access:private	language:Go	line:35	signature:(estatisticas map[string]int)
+main	cap1-ola/ola.go	1;"	p	language:Go	line:1
+main	cap1-ola/ola.go	5;"	f	access:private	language:Go	line:5	signature:()
+main	cap2-conversor/conversor.go	1;"	p	language:Go	line:1
+main	cap2-conversor/conversor.go	9;"	f	access:private	language:Go	line:9	signature:()
+main	cap2-quicksort/quicksort.go	1;"	p	language:Go	line:1
+main	cap2-quicksort/quicksort.go	9;"	f	access:private	language:Go	line:9	signature:()
+main	cap3-maps/maps.go	1;"	p	language:Go	line:1
+main	cap3-maps/maps.go	9;"	f	access:private	language:Go	line:9	signature:()
+main	cap3-pilha/pilha.go	1;"	p	language:Go	line:1
+main	cap3-pilha/pilha.go	8;"	f	access:private	language:Go	line:8	signature:()
+os	cap2-conversor/conversor.go	5;"	i	language:Go	line:5
+os	cap2-quicksort/quicksort.go	5;"	i	language:Go	line:5
+os	cap3-maps/maps.go	5;"	i	language:Go	line:5
+particionar	cap2-quicksort/quicksort.go	44;"	f	access:private	language:Go	line:44	signature:(numeros []int, pivo int)	type:[]int, []int
+quicksort	cap2-quicksort/quicksort.go	25;"	f	access:private	language:Go	line:25	signature:(numeros []int)	type:[]int
+strconv	cap2-conversor/conversor.go	6;"	i	language:Go	line:6
+strconv	cap2-quicksort/quicksort.go	6;"	i	language:Go	line:6
+strings	cap3-maps/maps.go	6;"	i	language:Go	line:6
+valores	cap3-pilha/pilha.go	35;"	w	access:private	ctype:Pilha	language:Go	line:35	type:[]interface{}
