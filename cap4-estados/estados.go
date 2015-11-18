@@ -19,4 +19,13 @@ func main() {
 	estados["SE"] = Estado{"Sergipe", 2228489, "Aracaju"}
 
 	fmt.Println(estados)
+
+	saoPaulo, encontrado := estados["SP"]
+	if encontrado {
+		fmt.Println(saoPaulo)
+	} else {
+		estados["SP"] = Estado{"São Paulo", 11253503, "São Paulo"}
+	}
+
+	fmt.Println(estados)
 }
